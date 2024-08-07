@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+
+\title{CS91T Spring 2023\\Final Project Checkpoint}
+\author{Austin Burgess, Alex Rimerman, Zach Potthoff}
+\date{April 17, 2023}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Project Goal}
+
+Our main goal for our project would be to create a Bogo Coin in Python, that
+produces heads with probability p, and tails with probability $1 - p$, given 
+a random p from the user. We will do this by using a function for a fair coin
+and manipulating the results in order to gain the correct probability.
+
+\section{Methods Used and/or Related Work}
+
+We plan on doing an implementation project. For our project, within our 
+code we will utilize a fair coin algorithm (this will most likely be
+through Python's built in random library). Additionally, before we begin 
+coding, we will do some reading on Markov Chain Monte Carlos. As we have 
+ already seen, the Metropolis-Hastings algorithm seems that it will 
+ be important and relevant to our project. At this moment, 
+we do not really know what this is and have not heard of these prior 
+to this, which is why we are reading about them. We do not have much more 
+for this section as we are trying to create the randomized algorithm 
+ourselves.
+
+\section{Staged Development Plan}
+
+\begin{enumerate}
+    \item Understand Markov Chain Monte Carlo
+    \begin{enumerate}
+        \item Metropolis-Hastings algorithm
+    \end{enumerate}
+    \item Set up the fair coin function
+    \item Get the bogo coin function to work when $p = .25$
+    \item Get the bogo coin function to work with a certain error probability
+    for all hundredths numbers
+    \item Get the bogo coin function to work with a certain error probability
+    for all thousandth numbers
+    \item Get the bogo coin function to work with a certain error probability
+    for all rational numbers (semi-stretch, tbd)
+    \item Get the bogo coin function to work with a certain error probability
+    for all numbers (Stretch)
+\end{enumerate} 
+
+\section{Measure of Success}
+
+We will measure the success by actually flipping the coins and seeing how 
+close to the actual probability we get. We are thinking about plotting this on
+a graph and see what the distribution looks like. Most importantly will be the
+comparison of how accurate our function behaves compared to the actual $p$ value.
+
+
+\section{Plans for Analyzing Results}
+
+We'll experiment with a number of different $p$ values, starting with simple ones such as $p = 0.25$. 
+We can then compare this percentage with the number of heads our algorithm produces, validating (or invalidating) 
+our results. We also will use the probabilistic method to ensure a desired result given some bound on error. 
+
+\end{document}
