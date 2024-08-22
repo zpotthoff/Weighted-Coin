@@ -9,24 +9,6 @@ def fairCoin():
     # this function produces our fair coin, uniform choice of 0 or 1
     return randint(0,1)
 
-def bogoCoin1(p):
-    # this function was our original function to create a bogo coin with simple
-    # p values like .25, this algo specifically only works for p = .25, .75
-    # (we adjusted outcomes and could get 0, .25, .5, .75, or 1)
-    coins = []
-    for i in range(2):
-        coins.append(fairCoin())
-    if (p < .5):
-        if (coins[0] == 1 and coins[1] == 1):
-            return 1
-        else:
-            return 0
-    else:
-        if (coins[0] == 0 and coins[1] == 0):
-            return 0
-        else:
-            return 1
-
 def bogoCoin(p):
     # this function takes in a parameter p, and produces a BOGO coin
     # returning 1 with probability p and 0 with 1 - p
