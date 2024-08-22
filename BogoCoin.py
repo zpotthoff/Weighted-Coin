@@ -11,14 +11,10 @@ class BogoCoin:
         self.numCoins = 10
 
     def flip(self):
-        coins = []
-        for i in range(self.numCoins):
-            coins.append(randint(0, 1))
+        coins = [randint(0, 1) for _ in range(self.numCoins)]
 
         cutoff = self.prob * (pow(2, self.numCoins))
-        total = 0
-        for i in range(numCoins):
-            total += coins[i] * (pow(2, i))
+        total = int("".join(str(x) for x in coins), 2)
 
         if (total < cutoff):
             return 1
