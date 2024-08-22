@@ -1,8 +1,5 @@
 from random import randint
-from math import log
 from math import pow
-from math import floor
-from math import ceil
 import matplotlib.pyplot as plt
 
 class BogoCoin:
