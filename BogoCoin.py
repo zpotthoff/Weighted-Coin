@@ -1,6 +1,5 @@
 from random import randint
 from math import pow
-import matplotlib.pyplot as plt
 
 class BogoCoin:
     def __init__(self, prob):
