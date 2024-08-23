@@ -1,3 +1,5 @@
+NOTE/TODO: README OUT OF DATE, WILL UPDATE
+
 Instructions to run the code:
 
 If "ImportError: Matplotlib requires dateutil>=2.7; you have 2.6.1",
