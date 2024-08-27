@@ -22,9 +22,9 @@ def main():
 
     # Plot Histogram on x
     plt.hist(sums, bins=30)
-    plt.gca().set(title='P = 0.125 Histogram', ylabel='Frequency')
-    plt.axvline(probability, color = 'black', linestyle = 'solid', linewidth = 2, label = 'p = 0.125')
-    plt.axvline(avg, color = 'red', linestyle = 'solid', linewidth = 2, label = 'p_hat = ' + str(avg))
+    plt.gca().set(title="P = " + str(probability) + " Histogram", ylabel="Frequency")
+    plt.axvline(probability, color = "black", linestyle = "solid", linewidth = 2, label = "p = " + str(probability))
+    plt.axvline(avg, color = "red", linestyle = "solid", linewidth = 2, label = r"$\hat{p}$ = " + str(avg))
     plt.legend()
     plt.show()
 
